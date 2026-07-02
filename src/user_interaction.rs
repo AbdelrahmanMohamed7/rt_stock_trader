@@ -20,11 +20,14 @@ pub fn start_user_interaction_task(stock_data: Arc<Mutex<StockData>>, duration: 
 mod tests {
     use super::*;
     use std::sync::{Arc, Mutex};
+    use std::time::Duration;
 
     #[test]
     fn test_user_interaction() {
         let stock_data = Arc::new(Mutex::new(StockData { price: 100.0 }));
-        start_user_interaction_task(stock_data);
+        let test_duration = Duration::from_secs(10);
+        
+        start_user_interaction_task(stock_data, test_duration);
 
         thread::sleep(Duration::from_secs(10));
     }
