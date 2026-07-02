@@ -1,4 +1,3 @@
-```markdown
 # Real-Time Systems: Multi-Threaded Stock Trading Simulator (Rust)
 
 A high-performance, concurrent simulation of a real-time stock trading platform engineered in **Rust**. Built to investigate optimizations in task processing, thread synchronization latency, and resource scheduling under real-time constraints, this system utilizes an independent-thread architecture that decouples data acquisition from automated trade execution.
