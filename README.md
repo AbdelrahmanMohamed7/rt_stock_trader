@@ -96,7 +96,3 @@ cargo run --release
 
 * **Task Processing Speeds:** Tested and confirmed to run deterministic intervals stably over extended periods.
 * **Concurrence Resource Efficiency:** Benchmarked to verify negligible lock contention overhead, highly stable memory usage, and absolute protection against data races without requiring a runtime garbage collector.
-
-```
-
-```
